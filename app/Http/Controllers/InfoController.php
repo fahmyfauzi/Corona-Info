@@ -12,7 +12,7 @@ class InfoController extends Controller
   public function index()
   {
     //api corona kawalcorona
-    $respon =Http::get('https://api.kawalcorona.com/indonesia/provinsi');
+    $respon =Http::get('https://api.kawalcorona.com/');
 
     //jadikan json
     $data =$respon->json();

@@ -12,7 +12,7 @@
         <thead class="thead-dark">
           <tr>
             <th scope="col">No</th>
-            <th scope="col">Provinsi</th>
+            <th scope="col">Negara</th>
             <th scope="col">Positif</th>
             <th scope="col">Sembuh</th>
             <th scope="col">Meninggal</th>
@@ -27,10 +27,10 @@
 
           @foreach ($data as $d)
             <th scope="row">{{$no++}}</th>
-            <td>{{ $d['attributes']['Provinsi'] }}</td>
-            <td>{{ $d['attributes']['Kasus_Posi']}}</td>
-            <td>{{ $d['attributes']['Kasus_Semb']}}</td>
-            <td>{{ $d['attributes']['Kasus_Meni']}}</td>
+            <td>{{ $d['attributes']['Country_Region'] }}</td>
+            <td>{{ $d['attributes']['Confirmed'] }}</td>
+            <td>{{ $d['attributes']['Recovered'] }}</td>
+            <td>{{ $d['attributes']['Deaths'] }}</td>
           </tr>
           @endforeach
         </tbody>
